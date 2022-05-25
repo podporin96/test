@@ -1,0 +1,219 @@
+
+  @font-face{
+    font-family: "OpenSans";
+    src: url("/OpenSans.ttf");
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
+*{
+    font-family: "OpenSans";
+}
+
+li {
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 25px;    
+    @media (max-width: 1080px) {
+        border-bottom: none;
+    }
+    
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1080px) {
+        flex-direction: column;
+    }
+
+    
+
+}
+.items {
+    display:inline-block;
+    text-align: center;
+    
+    
+    &_header {
+        color:rgb(128, 128, 128);
+        font-family: "OpenSans";  
+        display:inline-table;  
+           
+    }
+    &_item {     
+        margin-top: 10px;
+        padding-left: 20px;
+        vertical-align: top;
+        border-left: 2px solid rgb(206, 205, 200);
+          
+    }
+    &_number {
+        text-align: center;
+        display: inline;
+        font-size: 24px;  
+        font-weight: bold;
+        margin: 0 auto;
+        vertical-align: middle;
+        &_important {
+            color: rgb(238, 20, 78);
+        }
+        &_important1 {
+            color: rgb(241, 174, 0);              
+        }
+
+    }
+    &_proc {
+        padding-left: 4px;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 auto;
+        vertical-align: middle;
+        &_arrow {
+            width: 0;
+            height: 0;
+            border-right: 3.5px solid transparent;
+            border-left: 3.5px solid transparent;
+            border-bottom: 5px solid #ff0000;
+            margin-top: 0;
+        }
+        &_arrow1 {
+            border-bottom: 5px solid #000000
+        }
+        &_arrow2 {
+            border-top: 5px solid #000000;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        &_arrow3 {
+            border-top: 5px solid rgb(139, 200, 52);
+        }
+        &_number {
+            display: inline;
+            font-size: 12px;
+            font-weight: bold;              
+        }
+    }
+}
+
+.data {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    min-height: 570px;
+    background-color:rgb(225, 225, 225);
+    font-size: 13px;
+    font-family: "OpenSans";
+    color: rgb(160, 160, 160);
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    // width: 30%;
+    white-space: nowrap;
+    &_header {
+        font-size: 24px;
+        font-family: "OpenSans";
+    }
+    &_subheader {
+        display: flex;
+        justify-content: space-between;
+        color: rgb(160, 160, 160);
+        font-size: 14px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        height: 30px;
+        width: 100%;
+          
+    }
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    display: flex;    
+    &_name {
+        white-space: nowrap;
+        li {
+            @media (max-width: 920px) {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 80%;
+            }
+        }
+        
+        
+    }
+    ul {
+        list-style: none;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-inline-start: 0;
+    }
+    &_stat{
+        &_unit{
+            display: flex;
+            justify-content:end;
+            align-items:center;
+        }
+
+    }
+}
+
+.color {
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    
+}
+.color_p {
+    margin-left: 5px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.red {
+    background-color:#ff0000;
+    &_p {
+        border-color: #ff0000;
+    }
+    
+}
+.yellow {
+    background-color:rgb(214, 152, 19);
+    &_p {
+        border-color: rgb(214, 152, 19);
+    }
+    
+}
+.green {
+    background-color:rgb(139, 200, 52);
+    &_p {
+        border-color: rgb(139, 200, 52);
+    }
+    
+      
+}
+
+.sr {
+    color: rgb(160, 160, 160);
+}
+  
+.gt {
+    color: rgb(139, 200, 52);
+}
+.rt {
+    color:#ff0000;
+}
+.cat {
+    display: flex;
+    .items_proc_number {
+        font-size: 10px;
+    }
+}
+span {
+    font-size: 10px;
+}
